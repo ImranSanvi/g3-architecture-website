@@ -1,13 +1,72 @@
 
+/* for work sans font */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared */
+.display-flex{
+  display: flex;
+}
+
+.dark1{
+  color: #131313;
+}
+.dark2{
+  color: #424242;
+}
+.dark3{
+  color: #727272;
+}
+.dark4{
+  color: #A1A1A1;
+}
+.dark5{
+  color: #D0D0D0;
+}
+.dark6{
+  color: #E7E7E7;
+}
+.dark7{
+  color: #F3F3F3;
+}
+.primary-color{
+  color: #FF900E;
+}
+
+.bg{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
 /* style in Header */
 
 .navbar{
-    display: flex;
     justify-content: space-around;
     margin-top: 50px;
 }
-.navlist{
-    display: flex;
+.navbar h3{
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.nav-links{
     justify-content: space-around;
     gap: 30px;
+    
+}
+.nav-item {
+  list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500px;
+    font-size: 18px;
 }
