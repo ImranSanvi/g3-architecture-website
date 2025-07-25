@@ -1,0 +1,13 @@
+
+/* style in Header */
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.navlist{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
