@@ -35,6 +35,9 @@
 .dark7 {
   color: #f3f3f3;
 }
+.color-primary{
+  color: #ff900e;
+}
 .primary-bg{
   background-color: #ff900e;
 }
@@ -53,8 +56,20 @@
   font-size: 1.25rem;
 }
 
-/* style in Header */
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 200px;
+}
 
+main > section{
+  margin-top: 130px;
+}
+
+/* style in Header */
+.head{
+  padding:0px 140px;
+}
 
 /* style navbar */
 .navbar {
@@ -65,13 +80,9 @@
   font-weight: 700;
   font-size: 2.8rem;
 }
-
-.nav-links {
-  justify-content: space-between;
-  gap: 30px;
-}
 .nav-item {
   list-style: none;
+  margin-right: 30px;
 }
 
 .nav-link {
@@ -89,7 +100,7 @@
 
 /* style banner */
 .banner-content{
-  max-width: 860px;
+  max-width: 850px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
@@ -107,9 +118,32 @@
   width: 100%;
 }
 
+/* style in main section */
+
+/* team and features */
+.teams{
+  align-items: center;
+  gap: 130px;
+}
+.team-img-container{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 24px;
+}
+.feature-tittle{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#quick{
+  font-weight: 500;
+}
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
+  .head{
+    padding: 0px;
+  }
   .navbar, .nav-links{
     flex-direction: column;
   }
