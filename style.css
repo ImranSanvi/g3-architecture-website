@@ -237,6 +237,17 @@ main > section{
   filter: grayscale(100%);
 }
 
+/* style in footer */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1440px;
+  margin: 200px auto;
+  height: 100px;
+}
+
 /* responsive for small device*/
 
 @media screen and (max-width: 576px) {
