@@ -59,11 +59,14 @@
 main{
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0px 200px;
 }
 
 main > section{
   margin-top: 130px;
+}
+.section-tittle{
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 /* style in Header */
@@ -123,28 +126,76 @@ main > section{
 /* team and features */
 .teams{
   align-items: center;
-  gap: 130px;
+}
+.our-features{
+  margin-left: 130px;
 }
 .team-img-container{
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
   gap: 24px;
 }
-.feature-tittle{
-  font-size: 2.8rem;
-  font-weight: 700;
-}
+
 #quick{
   font-weight: 500;
 }
 
-/* responsive */
+/* style in some facts */
+
+.fact-description{
+  max-width: 540px;
+}
+.facts-container{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+  justify-content: center;
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+}
+.fact-number{
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* responsive for small device*/
 
 @media screen and (max-width: 576px) {
-  .head{
-    padding: 0px;
+  .head, .main{
+    padding: 10px;
   }
-  .navbar, .nav-links{
+  .navbar, .nav-links, .teams{
     flex-direction: column;
+  }
+
+  .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .our-features{
+    margin-left: 20px;
+  }
+}
+
+/* responsive medium size device */
+
+@media screen and (min-width: 576px) and (max-width: 978px){
+  .teams{
+    flex-direction: column;
+  }
+  our-features{
+    margin: 20px auto;
   }
 }
